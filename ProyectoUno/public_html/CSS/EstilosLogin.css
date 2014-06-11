@@ -1,0 +1,35 @@
+  table.tabs {
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: transparent;
+    font-size: 0.9em;
+}
+#login
+{
+    background: #f0f0f0;
+    width: 200px;
+    border: 25px solid white;
+    margin: 75px auto;
+    padding: 1em;
+    border-radius: 6px;
+}
+body
+{
+    background: aliceblue;
+}
+h1
+{
+    font-family: arial;
+    color: #0080ff;
+}
+input[type="text"],input[type="submit"],input[type="password"]
+{
+    border-radius: 3px;
+    padding: 2px;
+}
+input[type = "submit"]:hover,form a:hover
+{
+    background: #0040ff;
+    cursor: pointer;
+}
+

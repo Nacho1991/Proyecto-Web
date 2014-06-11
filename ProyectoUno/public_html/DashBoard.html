@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DashBoard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="JavaScript/Script.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/EstilosDashBoard.css">
+        <base href="/home/ignacio/Escritorio/ProyectoUno/public_html/Imagenes/">
+    </head>
+    <body id="fondo" onload="activarTab(this)">
+        <header>
+            <img src="Icono.png">
+            <h1>UTN Perfiles</h1>
+            <h2>DashBoard</h2>
+        </header>
+        <div id="cerrarSesion">
+            <section>
+                <article>
+                    <p>Bienvenido Administrador<a href="/home/ignacio/Escritorio/ProyectoUno/public_html/Login.html">  Cerrar sesi&oacute;n</a></p>
+                </article>
+            </section>	
+        </div>
+        <div id="dashboard">
+            <table id="Pestañas" class="tabs" data-min="0" data-max="4">
+                <tr>
+                    <th class="tabcks">&nbsp;</th>
+                    <th class="tabck" id="tabck-0" onmouseover="activarTab(this)">DashBoard</th>
+                    <th class="tabcks">&nbsp;</th>
+                    <th class="tabck" id="tabck-1" onmouseover="activarTab(this)">Carreras</th>
+                    <th class="tabcks">&nbsp;</th>
+                    <th class="tabck" id="tabck-2" onmouseover="activarTab(this)">Estudiantes</th>
+                    <th class="tabcks">&nbsp;</th>
+                    <th class="tabck" id="tabck-3" onmouseover="activarTab(this)">Usuarios</th>
+                </tr>
+                <tr class="filadiv">
+                    <td colspan="10" id="tab-0">
+                        <div class="tabdiv" id="tabdiv-0">
+                            <fieldset>
+                                <legend>Historial de búsquedas</legend>
+                                <p>2014/06/01 - Aguilar JS</p>
+                                <p>2014/08/28 - DataBase P</p>
+                                <p>2014/01/30 - PHP Code I</p>
+                                <p>2014/04/12 - Ruby On Rail</p>
+                                <p>2014/02/19 - Soporte TI</p>
+                            </fieldset>	
+                        </div>
+                        <div class="tabdiv" id="tabdiv-1">
+                            <fieldset>
+                                <legend>Listas de carreras</legend>
+                                <table class="tabla" id="tabla-1">
+                                    <tr id="columna-1">
+                                        <td>Código</td>
+                                        <td>Nombre de la carrera</td>
+                                    </tr>
+                                    <tr id="columna-2">
+                                        <td>ISW</td>
+                                        <td>Ingenieria En Software</td>
+                                    </tr>
+                                    <tr id="columna-3">
+                                        <td>COFI</td>
+                                        <td>Contabilidad y Finanzas</td>
+                                    </tr>
+                                    <tr id="columna-4">
+                                        <td>ADM</td>
+                                        <td>Comercio Exterior</td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                        </div>
+                        <div class="tabdiv" id="tabdiv-2">
+                            <p>id=tabdiv-2</p>
+                        </div>
+                        <div class="tabdiv" id="tabdiv-3">
+                            <p>2014/06/01</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
